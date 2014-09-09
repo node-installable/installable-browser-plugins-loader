@@ -6,7 +6,6 @@ module.exports = function (pluginRegistry) {
     });
 
     plugins.forEach(function (plugin) {
-        require('./../../node_modules/' + plugin + '/browser/scripts/main')(pluginRegistry);
-        require('!style!css!less!./../../node_modules/' + plugin + '/browser/styles/main.less');
+        require('./../' + plugin + '/browser/main.js')(pluginRegistry);
     });
 }
