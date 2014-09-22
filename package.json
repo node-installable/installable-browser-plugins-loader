@@ -1,11 +1,16 @@
 {
   "name": "installable-browser-plugins-loader",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Installable plugins loader for the browser",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "modular",
+    "apps",
+    "installable"
+  ],
+  "author": "Nikos Gereoudakis <gereoudakis@gmail.com>",
   "license": "MIT"
 }
