@@ -1,6 +1,6 @@
 {
   "name": "installable-browser-plugins-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Installable plugins loader for the browser",
   "main": "index.js",
   "scripts": {
