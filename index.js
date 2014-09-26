@@ -1,4 +1,4 @@
-module.exports = function (pluginRegistry) {
+module.exports = function (pluginManager) {
     var pkg = require('json!./../../package.json');
 
     var plugins = Object.keys(pkg.dependencies).filter(function (packageName) {
@@ -6,6 +6,6 @@ module.exports = function (pluginRegistry) {
     });
 
     plugins.forEach(function (plugin) {
-        require('./../' + plugin + '/browser/main.js')(pluginRegistry);
+        require('./../' + plugin + '/client/src/main.js')(pluginManager);
     });
 }
